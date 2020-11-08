@@ -7,7 +7,7 @@ interface Props {
 }
 const Button: React.FC<Props> = ({ ButtonNames, buttonClickHandler }) => {
   return (
-    <div>
+    <div className="button__container">
       {ButtonNames.map((name, i) => {
         return (
           <div

@@ -15,7 +15,7 @@ export const Animals: AnimalsType[] = [
     name: 'Amerikāņu Stafordšīras terjers',
     type: 'Suņi',
     description:
-      'LNeraugoties uz šo dzīvnieku spēku, tie ir labvēlīgi noskaņoti pret cilvēkiem. Šķirnes reputācijai stipri kaitējusi līdzība ar pitbulterjeriem. Šo suņu piekritējus apbūrusi suņu drosmīgā un padevīgā daba, savus saimniekus tie gatavi aizstāvēt ar neticamu pašaizliedzību - līdz nāvei.',
+      'Neraugoties uz šo dzīvnieku spēku, tie ir labvēlīgi noskaņoti pret cilvēkiem. Šķirnes reputācijai stipri kaitējusi līdzība ar pitbulterjeriem. Šo suņu piekritējus apbūrusi suņu drosmīgā un padevīgā daba, savus saimniekus tie gatavi aizstāvēt ar neticamu pašaizliedzību - līdz nāvei.',
     image:
       'https://dinozoopasaule.lv/lv/getimage/uploads/questionanswer/TLaOnZChWj4H5m9ggBjTp9WKNKiYWHng.png?w=600&h=400&fit=crop',
   },
@@ -53,7 +53,7 @@ export const Animals: AnimalsType[] = [
     id: 4,
     name: 'Mājas Ēzelis',
     type: 'Ēzeļi',
-    description: 'Mājas ēzelis (Equus asinus) ir zirgu ģints (Equus) ēzeļu apakšģints (Asinus) viena no sugām. Pastāv uzskats, ka tas ir cēlies no Āfrikas savvaļas ēzeļa[1] (Equus afracanus).',
+    description: 'Mājas ēzelis (Equus asinus) ir zirgu ģints (Equus) ēzeļu apakšģints (Asinus) viena no sugām. Pastāv uzskats, ka tas ir cēlies no Āfrikas savvaļas ēzeļa.',
     image:
       'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Szam%C3%A1r_038.jpg/250px-Szam%C3%A1r_038.jpg',
   },
