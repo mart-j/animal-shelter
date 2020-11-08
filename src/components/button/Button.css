@@ -1,0 +1,22 @@
+.button {
+    cursor: pointer;
+    margin: 5px;
+    background-color: rgb(55, 116, 116);
+    padding: 20px;
+    display: inline-flex;
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: darkslategrey;
+}
+
+.button--false {
+    background-color: rgba(55, 116, 116, 0.267);
+    
+}
+.button--false:hover {
+    background-color: rgba(47, 79, 79, 0.418);
+
+}
