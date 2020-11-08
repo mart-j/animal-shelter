@@ -7,7 +7,6 @@ import { Animals } from '../Animals';
 import { ButtonNames } from '../ButtonNames';
 
 const App = () => {
-  const [makeButtonInactive, setMakeButtonInactive] = useState(false);
   const [buttonNames, setButtonNames] = useState<string[]>(ButtonNames);
   const [activeDescription, setActiveDescription] = useState(Animals);
 
@@ -30,7 +29,6 @@ const App = () => {
   };
 
   const buttonClickHandler = (e: React.MouseEvent<HTMLElement>) => {
-    setMakeButtonInactive(!makeButtonInactive);
     const target = e.target as HTMLTextAreaElement;
     let newArray = [...buttonNames, target.id];
     if (buttonNames.includes(target.id)) {
