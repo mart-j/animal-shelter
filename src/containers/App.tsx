@@ -44,6 +44,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <h1 className="main-heading">Dzīvnieki</h1>
       <Button
         buttonClickHandler={buttonClickHandler}
         ButtonNames={ButtonNames}
