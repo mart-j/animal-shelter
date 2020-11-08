@@ -2,17 +2,17 @@ import React from 'react';
 import './Button.css';
 
 interface Props {
-  buttonClick: (e: React.MouseEvent<HTMLElement>) => void;
+  buttonClickHandler: (e: React.MouseEvent<HTMLElement>) => void;
   ButtonNames: string[];
 }
-const Button: React.FC<Props> = ({ ButtonNames, buttonClick }) => {
+const Button: React.FC<Props> = ({ ButtonNames, buttonClickHandler }) => {
   return (
     <div>
       {ButtonNames.map((name, i) => {
         return (
           <div
             id={name}
-            onClick={buttonClick}
+            onClick={buttonClickHandler}
             className="button "
             key={name + i}
           >

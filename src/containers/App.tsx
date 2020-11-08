@@ -8,7 +8,7 @@ import { ButtonNames } from '../ButtonNames';
 
 const App = () => {
   const [makeButtonInactive, setMakeButtonInactive] = useState(false);
-  const [isButton, setIsButton] = useState<string[]>(ButtonNames);
+  const [buttonNames, setButtonNames] = useState<string[]>(ButtonNames);
   const [activeDescription, setActiveDescription] = useState(Animals);
 
   const clickOnCard = (e: React.MouseEvent<HTMLElement>) => {
@@ -29,24 +29,27 @@ const App = () => {
     }
   };
 
-  const buttonClick = (e: React.MouseEvent<HTMLElement>) => {
+  const buttonClickHandler = (e: React.MouseEvent<HTMLElement>) => {
     setMakeButtonInactive(!makeButtonInactive);
     const target = e.target as HTMLTextAreaElement;
-    let newArray = [...isButton, target.id];
-    if (isButton.includes(target.id)) {
+    let newArray = [...buttonNames, target.id];
+    if (buttonNames.includes(target.id)) {
       newArray = newArray.filter((name) => name !== target.id);
     }
-    setIsButton(newArray);
+    setButtonNames(newArray);
     target.classList.toggle('button--false');
   };
 
   const filteredAnimals = Animals.filter((animal) => {
-    return isButton.includes(animal.type);
+    return buttonNames.includes(animal.type);
   });
 
   return (
     <div className="App">
-      <Button buttonClick={buttonClick} ButtonNames={ButtonNames} />
+      <Button
+        buttonClickHandler={buttonClickHandler}
+        ButtonNames={ButtonNames}
+      />
       <Card
         clickOnCard={clickOnCard}
         filteredAnimals={filteredAnimals}
