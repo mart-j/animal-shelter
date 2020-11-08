@@ -1,7 +1,6 @@
 import React from 'react';
 import './Card.css';
 
-
 interface Props {
   filteredAnimals: {
     active: boolean;
@@ -11,6 +10,7 @@ interface Props {
     description: string;
     image: string;
   }[];
+  mouseLeaveCard: (e: React.MouseEvent<HTMLElement>) => void;
   clickOnCard: (e: React.MouseEvent<HTMLElement>) => void;
 
   Animals: {
@@ -23,14 +23,18 @@ interface Props {
   }[];
 }
 
-const Card: React.FC<Props> = ({ clickOnCard, Animals }) => (
+const Card: React.FC<Props> = ({ mouseLeaveCard, clickOnCard, Animals }) => (
   <div className="container">
     {Animals.map(({ image, description, id, active, name }, index) => {
       return (
         <div key={id} className="card-wrapper">
           <div className="card">
             <div className="card__image-wrapper">
-              <div onClick={clickOnCard} className="card__image-trigger"></div>
+              <div
+                onMouseLeave={mouseLeaveCard}
+                onClick={clickOnCard}
+                className="card__image-trigger"
+              ></div>
 
               <img
                 id={`${id}`}

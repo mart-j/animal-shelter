@@ -28,6 +28,18 @@ const App = () => {
     }
   };
 
+  const mouseLeaveCard = (e: React.MouseEvent<HTMLElement>) => {
+    const target = e.target as HTMLTextAreaElement;
+
+    const animals = [...activeDescription];
+    const animal = { ...animals[Number(target.id)] };
+
+    animal.active = false;
+    // @ts-ignore
+    animals[Number(target.nextSibling.id)].active = true;
+    setActiveDescription(animals);
+  };
+
   const buttonClickHandler = (e: React.MouseEvent<HTMLElement>) => {
     const target = e.target as HTMLTextAreaElement;
     let newArray = [...buttonNames, target.id];
@@ -50,6 +62,7 @@ const App = () => {
         ButtonNames={ButtonNames}
       />
       <Card
+        mouseLeaveCard={mouseLeaveCard}
         clickOnCard={clickOnCard}
         filteredAnimals={filteredAnimals}
         Animals={filteredAnimals}
