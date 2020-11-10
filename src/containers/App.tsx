@@ -1,7 +1,6 @@
-/* eslint-disable consistent-return */
 import React, { useState } from 'react';
 import './App.css';
-import Button from '../components/button/Button';
+import Button from '../components/buttons/Button';
 import Card from '../components/card/Card';
 import { Animals } from '../Animals';
 import { ButtonNames } from '../ButtonNames';
@@ -16,27 +15,23 @@ const App = () => {
     if (target.classList.contains('card__image-trigger')) {
       const animals = [...activeDescription];
       const animal = { ...animals[Number(target.id)] };
+      const targetIndex = Number(target.nextElementSibling?.id);
 
       animal.active = false;
 
-      // @ts-ignore
-      animals[Number(target.nextSibling.id)].active = !animals[
-        // @ts-ignore
-        Number(target.nextSibling.id)
-      ].active;
+      animals[targetIndex].active = !animals[targetIndex].active;
       setActiveDescription(animals);
     }
   };
 
   const mouseLeaveCard = (e: React.MouseEvent<HTMLElement>) => {
     const target = e.target as HTMLTextAreaElement;
-
     const animals = [...activeDescription];
     const animal = { ...animals[Number(target.id)] };
+    const targetIndex = Number(target.nextElementSibling?.id);
 
     animal.active = false;
-    // @ts-ignore
-    animals[Number(target.nextSibling.id)].active = true;
+    animals[targetIndex].active = true;
     setActiveDescription(animals);
   };
 
