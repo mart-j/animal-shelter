@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/animal-shelter/static/css/main.e2de0d89.chunk.css",
+    "main.js": "/animal-shelter/static/js/main.fa907c3a.chunk.js",
+    "main.js.map": "/animal-shelter/static/js/main.fa907c3a.chunk.js.map",
+    "runtime-main.js": "/animal-shelter/static/js/runtime-main.fa50b4bc.js",
+    "runtime-main.js.map": "/animal-shelter/static/js/runtime-main.fa50b4bc.js.map",
+    "static/js/2.2f01b5e4.chunk.js": "/animal-shelter/static/js/2.2f01b5e4.chunk.js",
+    "static/js/2.2f01b5e4.chunk.js.map": "/animal-shelter/static/js/2.2f01b5e4.chunk.js.map",
+    "static/js/3.7b7b2b0b.chunk.js": "/animal-shelter/static/js/3.7b7b2b0b.chunk.js",
+    "static/js/3.7b7b2b0b.chunk.js.map": "/animal-shelter/static/js/3.7b7b2b0b.chunk.js.map",
+    "index.html": "/animal-shelter/index.html",
+    "static/css/main.e2de0d89.chunk.css.map": "/animal-shelter/static/css/main.e2de0d89.chunk.css.map",
+    "static/js/2.2f01b5e4.chunk.js.LICENSE.txt": "/animal-shelter/static/js/2.2f01b5e4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fa50b4bc.js",
+    "static/js/2.2f01b5e4.chunk.js",
+    "static/css/main.e2de0d89.chunk.css",
+    "static/js/main.fa907c3a.chunk.js"
+  ]
+}
